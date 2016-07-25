@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="scripts/mainCtrl.js"></script>
+    <script src="scripts/app.js"></script>
+    <title>Meet Your Animal Spirit Guide</title>
+</head>
+<!-- Begin Body Content -->
+<body ng-app="medicineCards">
+<header>
+<h1>What Spirit Animal is calling to you today?</h1>
+</header>
+<h3>In Native American tradition, medicine is 'anything that brings personal power,
+  strength, and understanding.' The Spirit Animal you are drawn to will share its
+ animal wisdom and guide you on your way.</h3>
+
+
+<div id="card-area">
+<a href="#/animal1">Deer</a>
+<a href="#/animal2">Buffalo</a>
+<a href="#/animal3">Dog</a>
+<a href="#/animal4">Swan</a>
+<a href="#/animal5">Dragonfly</a>
+<ng-view></ng-view>
+</div>
+
+<footer></footer>
+  <!-- End Body Content -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <script src="scripts/script.js"></script> -->
+</body>
+
+</html>
